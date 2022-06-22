@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f5f7fa 0%, #c3cfe2 100%);
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* APP CONTAINER */
+.container {
+    font-size: 10px;    /* <----- */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 40rem;
+    width: 26rem;
+    padding: 10px;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: -10px 10px 8px #888888;
+    transition: all 2s;
+}
+/* HOVER EFFECT FOR DEVICES THAT HAVE A POINTER */
+@media (hover:hover) and (pointer:fine)
+{
+    .container:hover {
+        height: 39rem;
+        width: 26.5rem;
+    }
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* LOGO */
+#logo {
+    /* border: 2px solid red; */
+    width: 30em;
+    margin-top: 1em;
+}
+
+/* SEARCH BOX CONTAINER*/
+.searchbox {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 1em;     /* <----- */
+    margin-top: 3em;
+    width: fit-content;
+}
+
+/* INPUT FIELD */
+input {
+    font-size: 2.2em;   /* <----- */
+    color: black;
+    background-color:white;
+    outline: none;
+    padding: 0.27em 0.45em;
+    text-transform: capitalize;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+}
+
+/* SEARCH ICON */
+i {
+    font-size: 2em;     /* <----- */
+    background-color: white;
+    color: black;
+    padding: 0.5em;
+    height: 1.94em;
+    border-top-right-radius: 0.33em;
+    border-bottom-right-radius: 0.33em;
+}
+i:hover {
+    color: red;
+    font-size: 2.1em;
+}
+
+/* CITY LOCATION */
+#location {
+    font-size: 4.5em;     /* <----- */
+    margin-top: 0.7em;
+}
+
+/* TEMPERATURE IN °C */
+#temperature {
+    font-size: 9em;
+}
+
+/* TEMPERATURE TEXT CONTAINER */
+.tempcontainer {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;    /* <----- */
+}
+
+/* CONDITION*/
+#condition {
+    font-size: 3em;     /* <----- */
+}
+
+/* INFORMATION CONTAINER */
+.info {
+    /* border: 2px solid red; */
+    font-size: 10px;    /* <----- */
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+.info p {
+    font-size: 2.5em;   /* <----- */
+    margin-top: 0.45em;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 325px) 
+{
+    html {
+        font-size: 11px;
+    }
+    .container {
+        font-size: 6px;
+    }
+    .searchbox {
+        font-size: 7px;
+    }
+    .tempcontainer {
+        font-size: 6px;
+    }
+    .info {
+        font-size: 7px;
+    }
+    
+}
+
+@media screen and (min-width: 326px) and (max-width: 360px) 
+{
+    html {
+        font-size: 12.5px;
+    }
+    .container {
+        font-size: 7px;
+    }
+    .tempcontainer {
+        font-size: 7px;
+    }
+    .info {
+        font-size: 7.5px;
+    }
+    
+}
+
+@media screen and (min-width: 361px) and (max-width: 400px) 
+{
+    html {
+        font-size: 13.5px;
+    }
+    .container {
+        font-size: 8px;
+    }
+    .tempcontainer {
+        font-size: 7px;
+    }
+    .info {
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (min-width: 401px) and (max-width: 450px) 
+{
+    html {
+        font-size: 14px;
+    }
+    .container {
+        font-size: 8.5px;
+    }
+    .tempcontainer {
+        font-size: 8px;
+    }
+    .info {
+        font-size: 8px;
+    }
+    
+}
+/*-----------------------------------------------------------------------------------------------------*/
